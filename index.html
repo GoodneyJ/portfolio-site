@@ -3,129 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GoodneyJc.netlify.com</title>
 
-
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href='styles.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
     
-
-    <!-- Particles Render Window -->
-    <!--- Fixed background -->
+    <!-- Fixed Particles Render Window -->
     <figure>
         <div class="fixed-wrap">
-        <div id="fixed">
-            <div id="particles-js"></div>
-        </div>
+            <div id="fixed">
+                <div id="particles-js"></div>
+            </div>
         </div>
     </figure>
   
-    
-
-    
     <!-- Caption/Call to action-->
     <div class="caption text-center text-light" id="caption-container">
-
         <h1 class='cta' id="cta-H1">JARROD GOODNEY</h1>
         <h3 class='cta' id='cta-H3'>Student of Front-End Technologies</h3>
-        <a href="" class="btn btn-outline-light btn-lg" href=''>Let's Talk!</a>
+        <a href="#CONTACT" class="btn btn-outline-light btn-lg" href=''>Let's Talk!</a>
     </div>
 
     <!-- NavBar Area -->
     <nav class="navbar justify-content-center">
-        
-        <a href="" class="nav-item active" id='HOME'>HOME</a>
-        <a href="" class="nav-item">PORTFOLIO</a>
-        <a href="" class="nav-item">ABOUT</a>
-        <a href="" class="nav-item">CONTACT</a>
+        <a href="#HOME" class="nav-item active" id='HOME'>HOME</a>
+        <a href="#ABOUT" class="nav-item">ABOUT</a>
+        <a href="#PORTFOLIO" class="nav-item">PORTFOLIO</a>
+        <a href="#CONTACT" class="nav-item">CONTACT</a>
     </nav>
-
 
     <!--Portfolio Section-->
     <div class="jumbotron jumbotron-fluid text-light">
-        <div class="container">
+        <div id='ABOUT' data-aos='fade-in' class="container">
             <h2 id='aboutTitle'>Stuff I know a thing or two about...</h2>
             <hr class="divider">
         </div>
-        <div class="row technologies">
+        <div data-aos="fade-in" class="row technologies">
             <div class="col-sm">
-                <i class="fab fa-html5"></i>
+                <i class="fab fa-html5 techs"></i>
                 <p class='info'>Html5</p>
             </div>
             <div class="col-sm">
-                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-css3-alt techs"></i>
                 <p class='info'>CSS3</p>
             </div>
             <div class="col-sm">
-                <i class="fab fa-js-square"></i>
+                <i class="fab fa-js-square techs"></i>
                 <p class='info'>Javascript ES6</p>
-            </div>
-            
+            </div>  
             <div class="col-sm">
-                <i class="fab fa-react"></i>
+                <i class="fab fa-react techs"></i>
                 <p class='info'>React</p>
-            </div>
-            
+            </div> 
         </div>
-            <div class="container center-content">
-                <h2 id="aboutTitle">Stuff I would like to know a thing or two about...</h2>
-                <hr class="divider">
+        <div data-aos="fade-in" class="container center-content">
+            <h2 id="aboutTitle">Stuff I would like to know a thing or two about...</h2>
+            <hr class="divider">
+        </div>
+        <div data-aos='fade-in' class="row">
+            <div class="col-sm">
+                <ul class='middle-content'>
+                    <li>Using what I know to create attractive & designs.</li>
+                    <li>Connect & store simple back end functions/data into databases</li>
+                </ul>
             </div>
-            <div class="row">
+            <div class="col-sm">
 
             </div>
+        </div>
+
     </div>
 
-  
-
-
-    <!-- Particles Render Window -->
-    <!--- Fixed background -->
+    <!--- Fixed background & Particles Render Window -->
     <figure>
         <div class="fixed-wrap">
-        <div id="fixed">
-            <div id="particles-js2"></div>
-        </div>
+            <div id="fixed">
+                <div id="particles-js2"></div>
+            </div>
         </div>
     </figure>
 
+    <!-- Footer / Contact Form-->
     <div class="container-fluid footer justify-content-center">
-        <h1 id='contactCTA'>Contact Me!</h1>
-        <hr class="light">
-
-        <p class="lead" id='questionCTA'>If you have any questions feel free to ask!</p>
+        <h1 data-aos='zoom-in' id='contactCTA'>Contact Me!</h1>
+        <hr data-aos='zoom-in' class="light">
+        <p data-aos='zoom-in' class="lead" id='questionCTA'>If you have any questions feel free to ask!</p>
         <div class="row" id='test'>
-            <form action="">
+            <form id="CONTACT" data-aos='zoom-in' action="POST" data-netlify="true">
                 <div class="form-group">
                     <div class="col-sm">
-                    <input type="text" placeholder=' Your Name'>
+                        <input type="text" name="name" placeholder=' Your Name'>
                     </div>
                     <div class="col-sm">
-                        <input type="email" placeholder=" Your Email">
+                        <input type="email" name='email' placeholder=" Your Email">
                     </div>
                     <div class="col-sm">
-                        <textarea placeholder=' Your Message' name="message" id="" cols="30" rows="10"></textarea>
-                        
+                        <textarea placeholder=' Your Message' name="message" id="" cols="30" rows="10"></textarea>  
                     </div> 
-                    <button class="btn btn-outline-light btn-lg" id='submit'>SUBMIT</button>                  
+                    <input type="submit" value="SUBMIT" class='btn btn-outline-light btn-lg' id='submit'/> 
+                    <div data-netlify-recaptcha='true'></div>
                 </div>
-                
             </form>
         </div>
         <div class="row socials justify-content-center">
-                <i class="fab fa-discord"></i>
-                <i class="fab fa-twitch"></i>
-                <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-discord media"></i>
+            <i class="fab fa-twitch media"></i>
+            <i class="fab fa-twitter-square media"></i>
         </div>
-            
+        <div class="row socials justify-content-center">
+            <p>JARROD GOODNEY </p><p id='copy'>&copy; 2020</p>
+        </div>  
     </div>
-    
 
     <script src="https://kit.fontawesome.com/51c0611afb.js" crossorigin="anonymous"></script>
     <script src="particles.js"></script>
     <script src="app.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

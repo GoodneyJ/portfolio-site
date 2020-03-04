@@ -267,7 +267,7 @@ textarea
 }
 
 /* Optimizations */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 812px) {
     .animated {
         /*CSS transitions*/
         -o-transition-property: none !important;

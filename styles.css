@@ -303,7 +303,7 @@ textarea
 
 @media only screen and (max-width: 812px) {
 
-    * {
+    body {
             /*CSS transitions*/
             -o-transition-property: none !important;
             -moz-transition-property: none !important;

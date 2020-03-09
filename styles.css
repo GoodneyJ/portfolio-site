@@ -301,7 +301,7 @@ textarea
     background: #0b1114;
 }
 
-@media  only screen and (max-width: 812px) {
+@media only screen and (max-width: 812px) {
 
 
 
@@ -311,11 +311,12 @@ textarea
         grid-template-areas: 
         ". top ."
         ". bottom .";
-    
+        
     }
 
     .top {
         grid-area: top;
+
     }
 
     .bottom {
@@ -323,4 +324,13 @@ textarea
 
     }
 
+}
+
+@media only screen and (max-width: 896px) {
+    .tiptrack {
+        transform: translate(-4%) !important;
+    }
+    .bottom {
+        border: 1px solid #060a0c;
+    }
 }

@@ -170,6 +170,31 @@ figure
     height: 100%;
 }
 
+.tiptrack {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.projectOne {
+    background: rgb(216, 216, 216);
+}
+
+
+
+#tipHead {
+    font-weight: 700;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.projectText {
+    font-weight: 600 !;
+}
+
+.center-content {
+    padding-bottom: 3rem;
+}
 /* Footer / Contact Form */
 .form-group
 {
@@ -276,29 +301,26 @@ textarea
     background: #0b1114;
 }
 
-.tiptrack {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-
-}
-
-.projectOne {
-    background: rgb(216, 216, 216);
-}
+@media  only screen and (max-width: 812px) {
 
 
 
-#tipHead {
-    font-weight: 700;
-    text-align: center;
-    margin: 1.5rem;
-}
+    .tiptrack {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        ". top ."
+        ". bottom .";
+    
+    }
 
-.projectText {
-    font-weight: 600 !;
-}
+    .top {
+        grid-area: top;
+    }
 
-.center-content {
-    padding-bottom: 3rem;
+    .bottom {
+        grid-area: bottom;
+
+    }
+
 }

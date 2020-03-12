@@ -96,9 +96,8 @@ body
 }
 
 
-
-.fixed + .jumbotron {
-    padding-top: 60px;
+.container {
+    padding-top: 140px;
   }
 
 .navbar a

@@ -81,9 +81,25 @@ body
 
 .navbar
 {
+
+    overflow: hidden;
     background: #0b1d26;
-    border-bottom: #ec7b13 solid .3rem;
+    border-bottom: #ec7b13 solid .4rem;
 }
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+
+}
+
+
+
+.fixed + .jumbotron {
+    padding-top: 60px;
+  }
 
 .navbar a
 {
@@ -269,7 +285,6 @@ textarea
     background: #060a0c;
 }
 
-
 #submit
 {
     align-items: flex-end;
@@ -282,16 +297,6 @@ textarea
     color: #ec7b13
 }
 
-.middle-content
-{
-    margin-top: 3rem;
-    padding-left: 4rem;
-    font-size: 2rem;
-    text-align: left;
-    letter-spacing: .1rem;
-    list-style-type: square;
-}
-
 .media
 {
     color: #ec7b13;
@@ -301,6 +306,8 @@ textarea
     background: #0b1114;
 }
 
+
+/* Media queries */
 @media only screen and (max-width: 812px) {
 
     body {

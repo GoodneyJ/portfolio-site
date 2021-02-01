@@ -87,6 +87,10 @@ body
     border-bottom: #ec7b13 solid .4rem;
 }
 
+#nav_bar {
+    padding-top: .5rem;
+}
+
 .fixed {
     position: fixed;
     width: 100%;
@@ -131,10 +135,18 @@ h4 {
     
 }
 
-#aboutTitle
+#about-title
 {
     font-weight: bold;
+}
 
+#about-text {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+#about-subheading {
+    margin-top: 1rem;
 }
 
 .techs
@@ -150,7 +162,8 @@ h4 {
 }
 
 .info
-{
+{   
+    text-align: center;
     letter-spacing: .2rem;
     font-size: 3rem;
     font-weight: 600;
@@ -185,34 +198,62 @@ figure
     height: 100%;
 }
 
-.tiptrack {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.projectOne {
+.project {
     background: rgb(216, 216, 216);
+    padding-bottom: 2rem;
+}
+
+.project-text-container {
+    padding-top: 3.5rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.img-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.img {
+    margin-top: 40%;
+    border-radius: 5px;
+    width: 75%;
 }
 
 
 
-#tipHead {
+
+.project-heading {
     font-weight: 700;
     text-align: center;
     margin: 1.5rem;
 }
 
-.projectText {
-    font-weight: 600 !;
+.project-text {
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .center-content {
     padding-bottom: 3rem;
 }
 /* Footer / Contact Form */
-.form-group
-{
+.form-group {
     align-content: center;
     margin: .5rem;
     padding: 1.5rem;
@@ -249,6 +290,8 @@ textarea
     color: white;
 }
 
+
+
 #contactCTA
 {
     font-size: 4rem;
@@ -278,7 +321,14 @@ textarea
     color: #ec7b13;
 }
 
-.socials
+#socials {
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-icons
 {
 
     background: #060a0c;
@@ -300,62 +350,74 @@ textarea
 {
     color: #ec7b13;
     font-size: 1.75rem;
-    margin: 1.5rem;
-    padding: 1.5rem;
+    margin: 1rem;
+    padding: 1rem;
     background: #0b1114;
 }
 
 
 /* Media queries */
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 1024px) {
 
-    body {
-            /*CSS transitions*/
-            -o-transition-property: none !important;
-            -moz-transition-property: none !important;
-            -ms-transition-property: none !important;
-            -webkit-transition-property: none !important;
-            transition-property: none !important;
-            /*CSS transforms*/
-            -o-transform: none !important;
-            -moz-transform: none !important;
-            -ms-transform: none !important;
-            -webkit-transform: none !important;
-            transform: none !important;
-            /*CSS animations*/
-            -webkit-animation: none !important;
-            -moz-animation: none !important;
-            -o-animation: none !important;
-            -ms-animation: none !important;
-            animation: none !important;
+    .technologies {
+        width: 100%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .tiptrack {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        ". top ."
-        ". bottom .";
-        
+    .row {
+        margin-top: 1rem;
+        display: block;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .top {
-        grid-area: top;
+
+    .img {
+
+        width: 100%;
+    }
+
+    .project {
+        border-radius: 5px;
+    }
+
+    .project-heading {
+        font-size: 1.5rem;
+    }
+
+    .project-text-container {
+        width: 100%;
 
     }
 
-    .bottom {
-        grid-area: bottom;
-
+    .project-text {
+        font-size: 1rem;
     }
+
+    .form-group {
+        align-content: center;
+        margin: 0rem;
+        padding: 0rem;
+    }
+
+
+    input[type=text], input[type=email], textarea {
+        width: 100%;
+    }
+
+    #submit {
+        margin-bottom: 2rem;
+    }
+
+    .media {
+        margin: 5%;
+        padding: 5%;  
+    }
+
+
 
 }
 
-@media only screen and (max-width: 896px) {
-    .tiptrack {
-        transform: translate(-4%) !important;
-    }
-    .bottom {
-        border: 1px solid #060a0c;
-    }
-}

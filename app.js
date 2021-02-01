@@ -13,7 +13,6 @@ particlesJS.load('particles-js', 'particles.json', function() {
 /* Otherwise just put the config content (json): */
 
 particlesJS('particles-js',
-  
   {
     "particles": {
       "number": {
@@ -274,3 +273,41 @@ function myFunction() {
     navbar.classList.remove("fixed");
   }
 }
+
+$('#submit').click(function (event){
+
+  console.log('button')
+
+  var email = $('#email').val();
+  var subject = $('#name').val();
+  var message = $('#message').val();
+  var statusElm = $('#status-element');
+  statusElm.empty();
+
+  if(email.length > 5 && email.includes('@') && email.includes('.')) {
+    statusElm.append('<div id="email-check">Email is valid</div>');
+
+  } else {
+    event.preventDefault();
+    statusElm.append('<div id="email-check">Email is not valid</div>');
+  }
+
+  if(subject.length > 2) {
+    statusElm.append('<div id="name-check">Name is valid</div>');
+  } else {
+    event.preventDefault();
+    statusElm.append('<div id="name-check">Name field must have more than 2 letters</div>');
+  }
+
+  if(message.length > 5) {
+    statusElm.append('<div id="message-check">Message is valid</div>');
+  } else {
+    event.preventDefault();
+    statusElm.append('<div id="message-check">Message field must have more than 5 letters</div>');
+  }
+
+  setTimeout(function(){
+    let statusCheck = document.getElementById('status-element');
+    statusCheck.remove();
+  }, 3000)
+})

@@ -200,20 +200,22 @@ figure
 
 
 .row {
+    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .project {
-    background: rgb(216, 216, 216);
+
     padding-bottom: 2rem;
 }
 
 .project-text-container {
-    padding-top: 3.5rem;
+
+
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -225,12 +227,12 @@ figure
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1.5rem;
+
     margin-bottom: 1.5rem;
 }
 
 .img {
-    margin-top: 40%;
+
     border-radius: 5px;
     width: 75%;
 }
@@ -241,7 +243,6 @@ figure
 .project-heading {
     font-weight: 700;
     text-align: center;
-    margin: 1.5rem;
 }
 
 .project-text {
@@ -357,7 +358,7 @@ textarea
 
 
 /* Media queries */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 900px) {
 
     .technologies {
         width: 100%;
@@ -421,3 +422,8 @@ textarea
 
 }
 
+@media only screen and (max-width: 1920px) {
+
+
+
+}

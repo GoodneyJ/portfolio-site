@@ -1,7 +1,7 @@
 # portfolio-site
-A Personal website for showcasing my work
-make the social icons at the bottom functional links
-need to style the email-confirmation page
+-A Personal website for showcasing my work
+-make the social icons at the bottom functional links
+-need to style the email-confirmation page
 
 ## Deployed
 

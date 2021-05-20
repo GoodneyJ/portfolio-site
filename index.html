@@ -24,7 +24,7 @@
     <!-- Caption/Call to action-->
     <div class="caption text-center text-light" id="caption-container">
         <h1 class='cta' id="cta-H1">JARROD GOODNEY</h1>
-        <h3 class='cta' id='cta-H3'>Student of Front-End Technologies</h3>
+        <h3 class='cta' id='cta-H3'>Front-End Developer</h3>
         <a href="#CONTACT" class="btn btn-outline-light btn-lg" href=''>Let's Talk!</a>
     </div>
 
@@ -39,12 +39,11 @@
     <!--Portfolio Section-->
     <div class="jumbotron jumbotron-fluid text-light">
         <div id='about-container' data-aos='fade-in' class="container">
-            <h2 id="about-title">Hi there, my name is Jarrod: I'm 24 & a self-taught developer.</h2>
-            <h5 id="about-text">I've been learning development stuff (Java, Python) on & off for about 3 or 4 years, but buckled down on web development mid-to-late 2019 while I was working as a pizza guy looking to create a better life for myself</h5>
+            <h2 class="about-title">Welcome to my portfolio!</h2>
+            <h2 class="about-title">My name is Jarrod, I'm a self-taught developer</h2>
+            <h5 id="about-text">I started learning how to code on and off since 2019 but towards the end of 2020 I started focusing effort & attention to my abilities </h5>
             <br>
-            <h4 id="about-subheading">Here's some stuff I know a thing or two about:</h4>
-
-
+            <h2 id="about-subheading">Here's a list of tech I'm proficient in:</h2>
         </div>
         <div id="technologies-container" class="row technologies" data-aos="fade-in">
             <div class="col-md">
@@ -53,7 +52,7 @@
             </div>
             <div class="col-md">
                 <i class="fab fa-css3-alt techs"></i>
-                <p class='info'>CSS3</p>
+                <p class='info'>CSS3 / Sass</p>
             </div>
             <div class="col-md">
                 <i class="fab fa-js-square techs"></i>
@@ -65,7 +64,7 @@
             </div> 
             <div class="col-md">
                 <i class="fab fa-react techs"></i>
-                <p class='info'>React</p>
+                <p class='info'>React / NextJS</p>
             </div>
         </div>
 
@@ -75,14 +74,40 @@
 
 
         <div id="projects-section-container">
-
-
             <div id="project-one" class="project-container" data-aos='fade-in'>
+                <div class="img-container">
+                    <a class="github-link" href='https://github.com/GoodneyJ/next-forum' target="_blank"><img class="img" src="https://media0.giphy.com/media/K8olfGBlq7QY2HQFae/giphy.gif" alt=""></a>
+                </div>
+                <div class="project-content-container">
+                    <h3 class="project-heading">NextJS Forum</h3>
+                    <p class='project-text'>This project is a fully featured forum</p>
+                    <p class='project-text'>Tech Includes:</p>
+                    <ul class='project-list'>
+                        <li>NextJS/React & Sass</li>
+                        <li>MongoDB & Mongoose</li>
+                        <li>Pusher & Nodemailer</li>
+                        <li>Jwt, Cookie & bCryptJS</li>
+                        <li>Rich Text Formatting via SunEditor React</li>
+                    </ul>
+                    <p class='project-text bold'>Features include:</p>
+                    <ul class='project-list'>
+                        <li>User Authentication/Authorization/Registration</li>
+                        <li>User email verification via nodemailer & Jwt</li>
+                        <li>Live chat via Pusher</li>
+                        <li>DB Manipulation via Posts, Comments & Users</li>
+                    </ul>
+                    <p class='project-text'>Main goal was to have authenticated users that can manpilate the DB without using an auth providers(Firebase, Amazon Cognito & Auth0)</p>
+                    <a class="github-link" href="https://github.com/GoodneyJ/next-forum"><p>Github</p></a>
+                    
+                </div>
+            </div>
+
+            <div id="project-two" class="project-container" data-aos='fade-in'>
                 <div class="project-content-container">
                     <h3 class="project-heading">CCHI:RE</h3>
                     <p class='project-text'>This is an app I made for my first client, a business that one of my friends family works for</p>
                     <p class='project-text'>It uses React, NodeJS, Express, nodemailer, axios & Sass</p>
-                    <p class='project-text'>It's pretty much done, nothing else to add unless they ask for it. I'm pretty satisfied for my first project</p>
+                    <p class='project-text'>It's pretty much done, nothing else to add unless they ask for it. I'm pretty satisfied for my first client project</p>
                     <a class="github-link" href="https://github.com/GoodneyJ/CCHIRE-WEBSITE"><p>Github</p></a>
                 </div>
                 <div class="img-container">
@@ -90,7 +115,7 @@
                 </div>
             </div>
 
-            <div id="project-one" class="project-container" data-aos='fade-in'>
+            <div id="project-three" class="project-container" data-aos='fade-in'>
                 <div class="img-container">
                     <a class="github-link" href='https://github.com/GoodneyJ/TarkyTourGuide/tree/main' target="_blank"><img class="img" src="https://media3.giphy.com/media/3UZkENmUmGHdZ9OJt2/giphy.gif" alt=""></a>
                 </div>
@@ -103,7 +128,7 @@
                 </div>
             </div>
     
-            <div id="project-two" class="project-container" data-aos='fade-in'>
+            <div id="project-four" class="project-container" data-aos='fade-in'>
                 <div class="project-content-container">
                     <h3 class="project-heading">W3Layouts Reference</h3>
                     <p class='project-text'>This is a design I got from W3Layouts</p>
@@ -116,7 +141,7 @@
                 </div>    
             </div>
 
-            <div id="project-three" class="project-container" data-aos='fade-in'>
+            <div id="project-five" class="project-container" data-aos='fade-in'>
                 <div class="img-container">
                     <a class="github-link" href='https://github.com/GoodneyJ/super-duper-spork' target="_blank"><img class="img" src="https://media4.giphy.com/media/sueH9jxlp0HG5Dcvx2/giphy.gif" alt=""></a>
                 </div>
@@ -129,7 +154,7 @@
                 </div>
             </div>
 
-            <div id="project-" class="project-container" data-aos='fade-in'>
+            <div id="project-six" class="project-container" data-aos='fade-in'>
                 <div class="project-content-container">
                     <h3 class="project-heading">A React Hangman App</h3>
                     <p class='project-text'>This was a challenge I set for myself to create in a sitting</p>
@@ -142,7 +167,7 @@
                 </div>
             </div>
     
-            <div id="project-" class="project-container" data-aos='fade-in'>
+            <div id="project-seven" class="project-container" data-aos='fade-in'>
                 <div class="img-container">
                     <a class="github-link" href='https://github.com/GoodneyJ/psychic-spoon' target="_blank"><img class="img" src="https://media4.giphy.com/media/POJOWYmh98BzX1FOQG/giphy.gif" alt=""></a>
                 </div>
@@ -156,7 +181,7 @@
             </div>
             
     
-            <div id="project-" class="project-container" data-aos='fade-in'>
+            <div id="project-eight" class="project-container" data-aos='fade-in'>
                 <div class="project-content-container">
                     <h3 class="project-heading">A React Quote App</h3>
                     <p class='project-text'>This is a simple quote app I made for a challenge in the FreeCodeCamp react curriculum</p>
@@ -169,7 +194,7 @@
                 </div>
             </div>
     
-            <div id="project-six" class="project-container" data-aos='fade-in' >
+            <div id="project-nine" class="project-container" data-aos='fade-in' >
                 <div class="img-container">
                     <a class="github-link" href='https://github.com/GoodneyJ/jgdev-gatsby-react-todo-list' target="_blank"><img class="img" src="https://media1.giphy.com/media/5Yz06V7Zc1vCghNZPZ/giphy.gif" alt=""></a>
                 </div>
@@ -182,7 +207,7 @@
                 </div>
             </div>
     
-            <div id="project-seven" class="project-container" data-aos='fade-in' >
+            <div id="project-ten" class="project-container" data-aos='fade-in' >
                 <div class="project-content-container">
                     <h3 class="project-heading">Pixel Art Maker</h3>
                     <p class='project-text'>This was one of the first projects I ever made with Javascript, it was a part of a course on Udacity</p>

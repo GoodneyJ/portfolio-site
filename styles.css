@@ -157,8 +157,7 @@ h4 {
 }
 
 
-#about-title
-{
+.about-title {
     font-weight: bold;
 }
 
@@ -169,6 +168,8 @@ h4 {
 
 #about-subheading {
     margin-top: 1rem;
+    font-weight: bold;
+
 }
 
 #technologies-container {
@@ -265,6 +266,13 @@ figure
     margin-right: auto;
 
 }
+
+.project-list {
+    margin: 1rem auto;
+    width: 50%;
+    text-align: left;
+}
+
 
 
 

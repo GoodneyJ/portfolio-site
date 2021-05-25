@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JG Development</title>
+    <meta name="description" content="JG Web development, design & SEO">
+    <title>JG Web Development & Design</title>
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -24,7 +25,7 @@
     <!-- Caption/Call to action-->
     <div class="caption text-center text-light" id="caption-container">
         <h1 class='cta' id="cta-H1">JARROD GOODNEY</h1>
-        <h3 class='cta' id='cta-H3'>Front-End Developer</h3>
+        <h3 class='cta' id='cta-H3'>Web Developer & Creative Problem Solver</h3>
         <a href="#CONTACT" class="btn btn-outline-light btn-lg" href=''>Let's Talk!</a>
     </div>
 
@@ -40,9 +41,7 @@
     <div class="jumbotron jumbotron-fluid text-light">
         <div id='about-container' data-aos='fade-in' class="container">
             <h2 class="about-title">Welcome to my portfolio!</h2>
-            <h2 class="about-title">My name is Jarrod, I'm a self-taught developer</h2>
-            <h5 id="about-text">I started learning how to code on and off since 2019 but towards the end of 2020 I started focusing effort & attention to my abilities </h5>
-            <br>
+            <h3 class="about-subtitle">My name is Jarrod, I'm a full-stack developer</h3>
             <h2 id="about-subheading">Here's a list of tech I'm proficient in:</h2>
         </div>
         <div id="technologies-container" class="row technologies" data-aos="fade-in">
@@ -68,7 +67,7 @@
             </div>
         </div>
 
-        <div id="portfolio" class="container center-content " data-aos="fade-in">
+        <div id="portfolio" data-aos="fade-in">
             <h2 id="about-title">Here are some of the projects I've made:</h2>
         </div>
 
@@ -76,26 +75,33 @@
         <div id="projects-section-container">
             <div id="project-one" class="project-container" data-aos='fade-in'>
                 <div class="img-container">
-                    <a class="github-link" href='https://github.com/GoodneyJ/next-forum' target="_blank"><img class="img" src="https://media0.giphy.com/media/K8olfGBlq7QY2HQFae/giphy.gif" alt=""></a>
+                    <a class="github-link" href='https://github.com/GoodneyJ/next-forum' target="_blank"><img class="img" src="https://media0.giphy.com/media/K8olfGBlq7QY2HQFae/giphy.gif" alt="NextJS Forum gif"></a>
                 </div>
                 <div class="project-content-container">
                     <h3 class="project-heading">NextJS Forum</h3>
                     <p class='project-text'>This project is a fully featured forum</p>
-                    <p class='project-text'>Tech Includes:</p>
-                    <ul class='project-list'>
-                        <li>NextJS/React & Sass</li>
-                        <li>MongoDB & Mongoose</li>
-                        <li>Pusher & Nodemailer</li>
-                        <li>Jwt, Cookie & bCryptJS</li>
-                        <li>Rich Text Formatting via SunEditor React</li>
-                    </ul>
-                    <p class='project-text bold'>Features include:</p>
-                    <ul class='project-list'>
-                        <li>User Authentication/Authorization/Registration</li>
-                        <li>User email verification via nodemailer & Jwt</li>
-                        <li>Live chat via Pusher</li>
-                        <li>DB Manipulation via Posts, Comments & Users</li>
-                    </ul>
+                    <div id="forum-flex-container">
+                        <div class="forum-flex-item">
+                            <p class='list-header'>Tech Includes:</p>
+                            <ul class='project-list'>
+                                <li>NextJS/React</li>
+                                <li>Sass</li>
+                                <li>MongoDB & Mongoose</li>
+                                <li>Pusher & Nodemailer</li>
+                                <li>Jwt, Cookies & bCryptJS</li>
+                                <li>Rich Text Formatting</li>
+                            </ul>
+                        </div>
+                        <div class="forum-flex-item">
+                            <p class='list-header'>Features include:</p>
+                            <ul class='project-list'>
+                                <li>User Authentication</li>
+                                <li>User email verification</li>
+                                <li>Live chat via Pusher</li>
+                                <li>Posts/Comments/Users</li>
+                            </ul>
+                        </div>
+                    </div>
                     <p class='project-text'>Main goal was to have authenticated users that can manpilate the DB without using an auth providers(Firebase, Amazon Cognito & Auth0)</p>
                     <a class="github-link" href="https://github.com/GoodneyJ/next-forum"><p>Github</p></a>
                     
@@ -111,13 +117,13 @@
                     <a class="github-link" href="https://github.com/GoodneyJ/CCHIRE-WEBSITE"><p>Github</p></a>
                 </div>
                 <div class="img-container">
-                    <a class="github-link" href='https://github.com/GoodneyJ/CCHIRE-WEBSITE' target="_blank"><img class="img" src="https://media3.giphy.com/media/6Dc1JaFi7OHqyt71CJ/giphy.gif" alt=""></a>
+                    <a class="github-link" href='https://github.com/GoodneyJ/CCHIRE-WEBSITE' target="_blank"><img class="img" src="https://media3.giphy.com/media/6Dc1JaFi7OHqyt71CJ/giphy.gif" alt="CCHI gif"></a>
                 </div>
             </div>
 
             <div id="project-three" class="project-container" data-aos='fade-in'>
                 <div class="img-container">
-                    <a class="github-link" href='https://github.com/GoodneyJ/TarkyTourGuide/tree/main' target="_blank"><img class="img" src="https://media3.giphy.com/media/3UZkENmUmGHdZ9OJt2/giphy.gif" alt=""></a>
+                    <a class="github-link" href='https://github.com/GoodneyJ/TarkyTourGuide' target="_blank"><img class="img" src="https://media3.giphy.com/media/3UZkENmUmGHdZ9OJt2/giphy.gif" alt="TTG gif"></a>
                 </div>
                 <div class="project-content-container">
                     <h3 class="project-heading">Tarkov Tour Guide</h3>
@@ -137,13 +143,13 @@
                     <a class="github-link" href="https://github.com/GoodneyJ/cautious-succotash"><p>Github</p></a> 
                 </div>
                 <div class="img-container">
-                    <a class="github-link" href='https://github.com/GoodneyJ/cautious-succotash' target="_blank"><img class="img" src="https://media2.giphy.com/media/YhLzPwkQrj1mdQDoKF/giphy.gif" alt=""></a>
+                    <a class="github-link" href='https://github.com/GoodneyJ/cautious-succotash' target="_blank"><img class="img" src="https://media2.giphy.com/media/YhLzPwkQrj1mdQDoKF/giphy.gif" alt="W3 template gif"></a>
                 </div>    
             </div>
 
             <div id="project-five" class="project-container" data-aos='fade-in'>
                 <div class="img-container">
-                    <a class="github-link" href='https://github.com/GoodneyJ/super-duper-spork' target="_blank"><img class="img" src="https://media4.giphy.com/media/sueH9jxlp0HG5Dcvx2/giphy.gif" alt=""></a>
+                    <a class="github-link" href='https://github.com/GoodneyJ/super-duper-spork' target="_blank"><img class="img" src="https://media4.giphy.com/media/sueH9jxlp0HG5Dcvx2/giphy.gif" alt="SquareSpace gif"></a>
                 </div>
                 <div class="project-content-container">
                     <h3 class="project-heading">SquareSpace template</h3>
@@ -163,13 +169,13 @@
                     <a class="github-link" href="https://github.com/GoodneyJ/HangmanJS"><p>Github</p></a>
                 </div>
                 <div class="img-container">
-                    <a class="github-link" href='https://github.com/GoodneyJ/HangmanJS' target="_blank"><img class="img" src="https://media1.giphy.com/media/fKBN9gEfdncDUQWI4I/giphy.gif" alt=""></a>
+                    <a class="github-link" href='https://github.com/GoodneyJ/HangmanJS' target="_blank"><img class="img" src="https://media1.giphy.com/media/fKBN9gEfdncDUQWI4I/giphy.gif" alt="Hangman gif"></a>
                 </div>
             </div>
     
             <div id="project-seven" class="project-container" data-aos='fade-in'>
                 <div class="img-container">
-                    <a class="github-link" href='https://github.com/GoodneyJ/psychic-spoon' target="_blank"><img class="img" src="https://media4.giphy.com/media/POJOWYmh98BzX1FOQG/giphy.gif" alt=""></a>
+                    <a class="github-link" href='https://github.com/GoodneyJ/psychic-spoon' target="_blank"><img class="img" src="https://media4.giphy.com/media/POJOWYmh98BzX1FOQG/giphy.gif" alt="Weather app gif"></a>
                 </div>
                 <div class="project-content-container">
                     <h3 class="project-heading">A React Weather App</h3>
@@ -190,13 +196,13 @@
                     <a class="github-link" href="https://github.com/GoodneyJ/cuddly-system"><p>Github</p></a>
                 </div>
                 <div class="img-container">
-                    <a class="github-link" href='https://github.com/GoodneyJ/cuddly-system' target="_blank"><img class="img" src="https://media0.giphy.com/media/LnJYMwoyzHgD6JaOwm/giphy.gif" alt=""></a>
+                    <a class="github-link" href='https://github.com/GoodneyJ/cuddly-system' target="_blank"><img class="img" src="https://media0.giphy.com/media/LnJYMwoyzHgD6JaOwm/giphy.gif" alt="Quote app gif"></a>
                 </div>
             </div>
     
             <div id="project-nine" class="project-container" data-aos='fade-in' >
                 <div class="img-container">
-                    <a class="github-link" href='https://github.com/GoodneyJ/jgdev-gatsby-react-todo-list' target="_blank"><img class="img" src="https://media1.giphy.com/media/5Yz06V7Zc1vCghNZPZ/giphy.gif" alt=""></a>
+                    <a class="github-link" href='https://github.com/GoodneyJ/jgdev-gatsby-react-todo-list' target="_blank"><img class="img" src="https://media1.giphy.com/media/5Yz06V7Zc1vCghNZPZ/giphy.gif" alt="ToDo app gif"></a>
                 </div>
                 <div class="project-content-container">
                     <h3 class="project-heading">A React To Do List</h3>
@@ -216,7 +222,7 @@
                     <a class="github-link" href="https://github.com/GoodneyJ/symmetrical-system"><p>Github</p></a>
                 </div>
                 <div class="img-container">
-                    <a class="github-link" href='https://github.com/GoodneyJ/symmetrical-system' target="_blank"><img id="pixel-img" class="img" src="https://media1.giphy.com/media/Sh2z2WOQIXhPUHIpeA/giphy.gif" alt=""></a>
+                    <a class="github-link" href='https://github.com/GoodneyJ/symmetrical-system' target="_blank"><img id="pixel-img" class="img" src="https://media1.giphy.com/media/Sh2z2WOQIXhPUHIpeA/giphy.gif" alt="PixelArt app gif"></a>
                 </div>
             </div>
         </div>
@@ -236,7 +242,7 @@
 
     <!-- Footer / Contact Form-->
     <div class="container-fluid footer justify-content-center">
-        <h1 data-aos='zoom-in' id='contactCTA'>Contact Me!</h1>
+        <h3 data-aos='zoom-in' id='contactCTA'>Contact Me!</h3>
         <hr data-aos='zoom-in' class="light">
         <p data-aos='zoom-in' class="lead" id='questionCTA'>If you have any questions feel free to ask!</p>
         <div class="row" id='test'>

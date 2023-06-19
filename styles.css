@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+/* Main Structure */
+html{
+    scroll-behavior: smooth;
+}
+body
+{
+
+    margin: 0;
+    padding: 0;
+    height: 95vh;
+    background: #060a0c;
+    font-family: Montserrat;
+}
+
+#particles-js
+{
+	position: relative;
+    width: 100%;
+    height: 100vh;
+	background-image: url("");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+#navbar {
+    position: relative;
+    z-index: 1000;
+}
+
+.fixed {
+    position: relative;
+    z-index: 1000;
+}
+
+
+/* Center Caption */
+#caption-container
+{
+    top: 37%;
+    width: 100%;
+    position: absolute;
+    letter-spacing: .2rem;
+}
+
+#cta-H1
+{
+    font-weight: bold;
+}
+
+#cta-H3
+{
+    font-weight: lighter;
+}
+
+.btn-lg
+{
+    border-width: medium;
+    border-radius: 0;
+    font-size: 1.1rem;
+    padding: .6rem 1.3rem;
+    margin: 1rem;
+}
+
+.btn:hover
+{
+    background: #ec7b13;
+    border: solid #ec7b13 3px;
+}
+
+
+/* ABOUT SECTION */
+
+.jumbotron
+{
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: white;
+    color: #0b1d26 !important;
+    border-bottom: solid .3rem #ec7b13;
+
+}
+
+.jumbotron p
+{
+    font-weight: lighter;
+}
+
+@keyframes navAnim{
+    0% {height: 0%}
+    100%{height: 10%}
+}
+
+.navbar
+{
+    position: relative;
+    z-index: 1000;
+    height: 10%;
+    overflow: hidden;
+    background: #0b1d26;
+    border-bottom: #ec7b13 solid .4rem;
+
+}
+
+#nav_bar {
+
+    padding-top: .5rem;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 2000;
+    width: 100%;
+    top: 0;
+
+    animation: navAnim;
+    animation-duration: 350ms;
+    box-shadow: 0px 1px 10px 2px #494949  ;
+}
+
+.fixed, .jumbotron {
+    padding-top: 50px;
+}
+
+.navbar a
+{
+    text-decoration: none;
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    font-size: 1.3rem;
+}
+
+
+.navbar a:hover
+{
+    color: #ec7b13;
+    transition: .3s;
+}
+
+h4 {
+    font-weight: 600;
+    letter-spacing: .1rem;
+
+}
+
+#about-container {
+    margin: 3rem auto;
+}
+
+.about-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.about-subtitle {
+    margin: 2rem auto;
+}
+
+#about-text {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+#about-subheading {
+    
+    margin-top: 2rem;
+    font-weight: medium;
+
+}
+
+#technologies-container {
+    margin: 2rem auto;
+}
+
+.techs
+{
+    color: #ec7b13;
+    font-size: 8rem;
+    padding: 3rem;
+}
+
+.technologies
+{
+    margin: 4rem;
+}
+
+.info
+{   
+    text-align: center;
+    letter-spacing: .2rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/*--- Fixed Background Image --*/
+figure
+{
+    position: relative;
+    width: 100%;
+    height: 95%;
+    margin: 0!important;
+}
+
+.fixed-wrap
+{
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#fixed
+{
+    background: #060a0c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* PROJECTS SECTION */
+
+#portfolio {
+    margin: 4rem auto;
+    
+}
+
+#forum-flex-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.forum-flex-item {
+    margin: 0 auto;
+}
+
+.list-header {
+    font-weight: bold;
+}
+
+#projects-section-container {
+    width: 100%;
+    margin: 5rem auto;
+    background-color: #e3e3e3;
+    padding: 1.5rem;
+}
+
+.project-container {
+    width: 80%;
+    margin: 3.5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+    padding: 1.5rem;
+
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.04) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2) ;
+}
+
+.project-content-container {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+
+}
+
+.project-text {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.project-list {
+    margin: 1rem .5rem;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+}
+
+.project-list, li {
+    width: 100%;
+    font-size: .85rem;
+}
+
+.img-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.img {
+
+    border-radius: 5px;
+    width: 75%;
+}
+
+.project-heading {
+    font-weight: 700;
+    text-align: center;
+}
+
+.project-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.center-content {
+    padding-bottom: 5rem;
+}
+
+.github-link {
+    position: relative;
+    z-index: 200;
+    overflow: auto;
+    text-decoration: none !important;
+}
+
+.github-link p{
+    color: #EC7B13;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    padding: .5rem;
+    text-align: center;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 100ms linear, color 100ms linear;
+    border-radius: 35px;
+}
+
+.github-link p:hover {
+    text-decoration: none;
+
+    background-color: #EC7B13;
+    color: white;
+    transition: background-color 150ms linear, color 150ms linear;
+
+    
+}
+
+/* Footer / Contact Form */
+.form-group {
+    align-content: center;
+    margin: .5rem;
+    padding: 1.5rem;
+}
+
+input[type=text], input[type=email]
+{
+    text-align: center;
+    padding: 15px;
+    height: 4vh;
+    margin-top: .2rem;
+    background: #060a0c;
+    width: 50%;
+    border: none;
+    color: white ;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    border: #EC7B13 2px solid;
+    outline: none;
+    transition: all 0.5s;
+}
+
+textarea
+{
+    text-align: center;
+    padding: 15px;
+    margin-top: .2rem;
+    background: #060a0c;
+    border: none;
+    width: 50%;
+    box-sizing: border-box;
+    color: white ;
+}
+ 
+.footer
+{
+    border-top: 3px solid #ec7b13;
+    background: #0b1d26;
+    color: white;
+}
+
+#contactCTA
+{
+    font-size: 4rem;
+    padding-top: 3rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.light
+{
+    background: white;
+    border: solid 3px white;
+    width: 10%;
+}
+
+#test
+{
+    display: block;
+    text-align: center;
+}
+
+#questionCTA
+{
+    padding-top: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #ec7b13;
+}
+
+#socials
+{
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-icons
+{
+
+    background: #060a0c;
+}
+
+#submit
+{
+    align-items: flex-end;
+    text-align: center;
+}
+
+#copy
+{
+    padding-left: 5px;
+    color: #ec7b13
+}
+
+.media
+{
+    color: #ec7b13;
+    font-size: 1.75rem;
+    margin: 1rem;
+    padding: 1rem;
+    background: #0b1114;
+}
+
+/* PHP PAGE */
+
+#email-submission-container h2, #email-submission-container p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media queries */
+
+/* SmartPhone */
+@media only screen and (max-width: 428px) {
+
+    #cta-H1 {
+        font-size: 1.75rem;
+    }
+
+    #cta-H3 {
+        font-size: 1rem;
+    }
+
+    .nav-item {
+        padding: 0rem .4rem !important;
+        font-size: .85rem !important;
+    }
+
+    .project-content-container {
+        width: 95%;
+    }
+
+    .project-container {
+        display: block;
+        padding: 5rem 1rem;
+        width: 100%;
+    }
+
+    #forum-flex-container {
+        flex-direction: column;
+
+    }
+
+    .project-text {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .project-list, li {
+        font-size: .75rem;
+        width: 100%;
+    }
+
+    .img-container {
+        width: 100%;
+    }
+    
+    .img {
+        
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .github-link p{
+
+        width: 75%;
+
+    }
+
+    #contactCTA {
+        font-size: 2rem;
+    }
+
+    input[type=text], input[type=email], textarea {
+        width: 100%;
+    }
+}
+
+/* Small Tablet */
+@media only screen and (min-width: 650px) and (max-width: 749px) {
+
+    @keyframes navMobileAnim{
+        0% {height: 0%}
+        100%{height: 20%}
+    }
+    
+    nav {
+        display: flex;
+    }
+
+    .navbar {
+        height: 10%;
+    }
+
+    .nav-item {
+        padding: 0 .2rem !important;
+        font-size: 1rem !important;
+    }
+
+    .fixed {
+
+        animation: navMobileAnim;
+        animation-duration: 350ms;
+    }
+
+    /* ABOUT SECTION */
+
+    .technologies {
+        width: 100%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* PROJECTS SECTION */
+
+    .project-container {
+        display: block;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    #forum-flex-container {
+        flex-direction: column;
+
+    }
+
+    .project-list, li {
+        font-size: .75rem;
+        width: 100%;
+    }
+
+
+    .project-content-container {
+        width: 80%;
+        padding-bottom: 3rem;
+
+    }
+
+    .img {
+
+        width: 100%;
+    }
+
+    .project {
+        border-radius: 5px;
+    }
+
+    .project-heading {
+        font-size: 1.5rem;
+    }
+
+
+    .project-text {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .github-link p{
+
+
+        width: 60%;
+
+    }
+    
+
+    /* FOOTER SECTION */
+
+    .form-group {
+        align-content: center;
+        margin: 0rem;
+        padding: 0rem;
+    }
+
+
+    input[type=text], input[type=email], textarea {
+        width: 100%;
+    }
+
+    #submit {
+        margin-bottom: 2rem;
+    }
+
+    .media {
+        margin: 5%;
+        padding: 5%;  
+    }
+
+
+
+}
+
+/* Med Tablet / Small Monitor */
+@media only screen and (min-width: 750px) and (max-width: 1024px) {
+    /* PROJECTS SECTION */
+
+    .project-container {
+        display: block;
+        padding-bottom: 5rem;
+    }
+
+    .project-content-container {
+        width: 100%;
+        height: 50%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .project-text {
+        width: 75%;
+    }
+
+    .forum-flex-item, li {
+        font-size: .75rem;
+    }
+
+}

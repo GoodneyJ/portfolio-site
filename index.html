@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JG Web development, design & SEO">
+    <title>JG Web Development & Design</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href='styles.css' rel='stylesheet' type='text/css'>
+    
+</head>
+<body>
+    
+    <!-- Fixed Particles Render Window -->
+    <figure id='HOME'>
+        <div class="fixed-wrap">
+            <div id="fixed">
+                <div id="particles-js"></div>
+            </div>
+        </div>
+    </figure>
+  
+    <!-- Caption/Call to action-->
+    <div class="caption text-center text-light" id="caption-container">
+        <h1 class='cta' id="cta-H1">JARROD GOODNEY</h1>
+        <h3 class='cta' id='cta-H3'>Web Developer & Creative Problem Solver</h3>
+        <a href="#CONTACT" class="btn btn-outline-light btn-lg" href=''>Let's Talk!</a>
+    </div>
+
+    <!-- NavBar Area -->
+    <nav class="navbar justify-content-center sticky-top" id="nav_bar">
+        <a href="#HOME" class="nav-item active" id='HOME'>HOME</a>
+        <a href="#ABOUT" class="nav-item">ABOUT</a>
+        <a href="#PORTFOLIO" class="nav-item">PORTFOLIO</a>
+        <a href="#CONTACT" class="nav-item">CONTACT</a>
+    </nav>
+
+    <!--Portfolio Section-->
+    <div class="jumbotron jumbotron-fluid text-light">
+        <div id='about-container' data-aos='fade-in' class="container">
+            <h2 class="about-title">Welcome to my portfolio!</h2>
+            <h3 class="about-subtitle">My name is Jarrod, I'm a full-stack developer</h3>
+            <h2 id="about-subheading">Here's a list of tech I'm proficient in:</h2>
+        </div>
+        <div id="technologies-container" class="row technologies" data-aos="fade-in">
+            <div class="col-md">
+                <i class="fab fa-html5 techs"></i>
+                <p class='info'>Html5</p>
+            </div>
+            <div class="col-md">
+                <i class="fab fa-css3-alt techs"></i>
+                <p class='info'>CSS3 / Sass</p>
+            </div>
+            <div class="col-md">
+                <i class="fab fa-js-square techs"></i>
+                <p class='info'>Javascript ES6</p>
+            </div>
+            <div class="col-md">
+                <i class="fab fa-node-js techs"></i>
+                <p class='info'>NodeJS</p>
+            </div> 
+            <div class="col-md">
+                <i class="fab fa-react techs"></i>
+                <p class='info'>React / NextJS</p>
+            </div>
+        </div>
+
+        <div id="portfolio" data-aos="fade-in">
+            <h2 id="about-title">Here are some of the projects I've made:</h2>
+        </div>
+
+
+        <div id="projects-section-container">
+            <div id="project-one" class="project-container" data-aos='fade-in'>
+                <div class="img-container">
+                    <a class="github-link" href='https://github.com/GoodneyJ/next-forum' target="_blank"><img class="img" src="https://media0.giphy.com/media/K8olfGBlq7QY2HQFae/giphy.gif" alt="NextJS Forum gif"></a>
+                </div>
+                <div class="project-content-container">
+                    <h3 class="project-heading">NextJS Forum</h3>
+                    <p class='project-text'>This project is a fully featured forum</p>
+                    <div id="forum-flex-container">
+                        <div class="forum-flex-item">
+                            <p class='list-header'>Tech Includes:</p>
+                            <ul class='project-list'>
+                                <li>NextJS/React</li>
+                                <li>Sass</li>
+                                <li>MongoDB & Mongoose</li>
+                                <li>Pusher & Nodemailer</li>
+                                <li>Jwt, Cookies & bCryptJS</li>
+                                <li>Rich Text Formatting</li>
+                            </ul>
+                        </div>
+                        <div class="forum-flex-item">
+                            <p class='list-header'>Features include:</p>
+                            <ul class='project-list'>
+                                <li>User Authentication</li>
+                                <li>User email verification</li>
+                                <li>Live chat via Pusher</li>
+                                <li>Posts/Comments/Users</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class='project-text'>Main goal was to have authenticated users that can manipulate the DB without using an auth providers(Firebase, Amazon Cognito & Auth0)</p>
+                    <a class="github-link" href="https://github.com/GoodneyJ/next-forum"><p>Github</p></a>
+                    
+                </div>
+            </div>
+
+            <div id="project-two" class="project-container" data-aos='fade-in'>
+                <div class="project-content-container">
+                    <h3 class="project-heading">CCHI:RE</h3>
+                    <p class='project-text'>This is an app I made for my first client, a business that one of my friends family works for</p>
+                    <p class='project-text'>It uses React, NodeJS, Express, nodemailer, axios & Sass</p>
+                    <p class='project-text'>It's pretty much done, nothing else to add unless they ask for it. I'm pretty satisfied for my first client project</p>
+                    <a class="github-link" href="https://github.com/GoodneyJ/CCHIRE-WEBSITE"><p>Github</p></a>
+                </div>
+                <div class="img-container">
+                    <a class="github-link" href='https://github.com/GoodneyJ/CCHIRE-WEBSITE' target="_blank"><img class="img" src="https://media3.giphy.com/media/6Dc1JaFi7OHqyt71CJ/giphy.gif" alt="CCHI gif"></a>
+                </div>
+            </div>
+
+            <div id="project-three" class="project-container" data-aos='fade-in'>
+                <div class="img-container">
+                    <a class="github-link" href='https://github.com/GoodneyJ/TarkyTourGuide' target="_blank"><img class="img" src="https://media3.giphy.com/media/3UZkENmUmGHdZ9OJt2/giphy.gif" alt="TTG gif"></a>
+                </div>
+                <div class="project-content-container">
+                    <h3 class="project-heading">Tarkov Tour Guide</h3>
+                    <p class='project-text'>This is an app I made for newer players to Escape From Tarkov</p>
+                    <p class='project-text'>You're able to search a database I made with MongoDB for Keys/Ammo types in the game to display basic info about them</p>
+                    <p class='project-text'>I plan on adding a whole bunch of other features. You can read more about the project here:</p>
+                    <a class="github-link" href="https://github.com/GoodneyJ/TarkyTourGuide"><p>Github</p></a>
+                </div>
+            </div>
+    
+            <div id="project-four" class="project-container" data-aos='fade-in'>
+                <div class="project-content-container">
+                    <h3 class="project-heading">W3Layouts Reference</h3>
+                    <p class='project-text'>This is a design I got from W3Layouts</p>
+                    <p class='project-text'>the original is made with WordPress but I recreated it in react by eye</p>
+                    <p class='project-text'>I still need to add the mobile/responsive view, but as I accomplished what I was interested in, it might be a while if I do it</p>
+                    <a class="github-link" href="https://github.com/GoodneyJ/cautious-succotash"><p>Github</p></a> 
+                </div>
+                <div class="img-container">
+                    <a class="github-link" href='https://github.com/GoodneyJ/cautious-succotash' target="_blank"><img class="img" src="https://media2.giphy.com/media/YhLzPwkQrj1mdQDoKF/giphy.gif" alt="W3 template gif"></a>
+                </div>    
+            </div>
+
+            <div id="project-five" class="project-container" data-aos='fade-in'>
+                <div class="img-container">
+                    <a class="github-link" href='https://github.com/GoodneyJ/super-duper-spork' target="_blank"><img class="img" src="https://media4.giphy.com/media/sueH9jxlp0HG5Dcvx2/giphy.gif" alt="SquareSpace gif"></a>
+                </div>
+                <div class="project-content-container">
+                    <h3 class="project-heading">SquareSpace template</h3>
+                    <p class='project-text'>This is a design I got from SquareSpace</p>
+                    <p class='project-text'>Just another design that I recreated by eye in react, I added multiple pages & Content</p>
+                    <p class='project-text'>I still need to add a few things but for now I'm satisfied</p>
+                    <a class="github-link" href="https://github.com/GoodneyJ/super-duper-spork"><p>Github</p></a> 
+                </div>
+            </div>
+
+            <div id="project-six" class="project-container" data-aos='fade-in'>
+                <div class="project-content-container">
+                    <h3 class="project-heading">A React Hangman App</h3>
+                    <p class='project-text'>This was a challenge I set for myself to create in a sitting</p>
+                    <p class='project-text'>It uses hooks & Sass, chooses a random word from the state array and displays an input section that displays whether or not the guess was correct</p>
+                    <p class='project-text'>I might integrate a random word API. I need to add a few finishing touches but it's pretty much complete</p>
+                    <a class="github-link" href="https://github.com/GoodneyJ/HangmanJS"><p>Github</p></a>
+                </div>
+                <div class="img-container">
+                    <a class="github-link" href='https://github.com/GoodneyJ/HangmanJS' target="_blank"><img class="img" src="https://media1.giphy.com/media/fKBN9gEfdncDUQWI4I/giphy.gif" alt="Hangman gif"></a>
+                </div>
+            </div>
+    
+            <div id="project-seven" class="project-container" data-aos='fade-in'>
+                <div class="img-container">
+                    <a class="github-link" href='https://github.com/GoodneyJ/psychic-spoon' target="_blank"><img class="img" src="https://media4.giphy.com/media/POJOWYmh98BzX1FOQG/giphy.gif" alt="Weather app gif"></a>
+                </div>
+                <div class="project-content-container">
+                    <h3 class="project-heading">A React Weather App</h3>
+                    <p class='project-text'>This is a simple weather app I made in react</p>
+                    <p class='project-text'>It displays today's forecast aswell as the next two days</p>
+                    <p class='project-text'>I plan on paying for a better plan for the API so it can display more data & information, but for now it's functional enough.</p>
+                    <a class="github-link" href="https://github.com/GoodneyJ/TarkyTourGuide/tree/main"><p>Github</p></a>
+                </div>          
+            </div>
+            
+    
+            <div id="project-eight" class="project-container" data-aos='fade-in'>
+                <div class="project-content-container">
+                    <h3 class="project-heading">A React Quote App</h3>
+                    <p class='project-text'>This is a simple quote app I made for a challenge in the FreeCodeCamp react curriculum</p>
+                    <p class='project-text'>It fetches a quote from a displays it, nothing crazy</p>
+                    <p class='project-text'>I need to add the twitter & tumblr functionality</p>
+                    <a class="github-link" href="https://github.com/GoodneyJ/cuddly-system"><p>Github</p></a>
+                </div>
+                <div class="img-container">
+                    <a class="github-link" href='https://github.com/GoodneyJ/cuddly-system' target="_blank"><img class="img" src="https://media0.giphy.com/media/LnJYMwoyzHgD6JaOwm/giphy.gif" alt="Quote app gif"></a>
+                </div>
+            </div>
+    
+            <div id="project-nine" class="project-container" data-aos='fade-in' >
+                <div class="img-container">
+                    <a class="github-link" href='https://github.com/GoodneyJ/jgdev-gatsby-react-todo-list' target="_blank"><img class="img" src="https://media1.giphy.com/media/5Yz06V7Zc1vCghNZPZ/giphy.gif" alt="ToDo app gif"></a>
+                </div>
+                <div class="project-content-container">
+                    <h3 class="project-heading">A React To Do List</h3>
+                    <p class='project-text'>This was the first project I made in react, it's another from the Free Code Camp React Challenges</p>
+                    <p class='project-text'>It does what to do lists should do, you can add, remove & complete tasks. The design I got from front-end mentor to challenge myself at the time</p>
+                    <p class='project-text'></p>
+                    <a class="github-link" href="https://github.com/GoodneyJ/jgdev-gatsby-react-todo-list"><p>Github</p></a>
+                </div>
+            </div>
+    
+            <div id="project-ten" class="project-container" data-aos='fade-in' >
+                <div class="project-content-container">
+                    <h3 class="project-heading">Pixel Art Maker</h3>
+                    <p class='project-text'>This was one of the first projects I ever made with Javascript, it was a part of a course on Udacity</p>
+                    <p class='project-text'>It generates a grid based on the height & width inputs, you can pick a color, and color each cell of the grid as well as reset the grid</p>
+                    <p class='project-text'></p>
+                    <a class="github-link" href="https://github.com/GoodneyJ/symmetrical-system"><p>Github</p></a>
+                </div>
+                <div class="img-container">
+                    <a class="github-link" href='https://github.com/GoodneyJ/symmetrical-system' target="_blank"><img id="pixel-img" class="img" src="https://media1.giphy.com/media/Sh2z2WOQIXhPUHIpeA/giphy.gif" alt="PixelArt app gif"></a>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="padding: 5rem">Any questions? Feel free to use the contact form below!</h2>
+
+    </div>
+
+    <!--- Fixed background & Particles Render Window -->
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
+                <div id="particles-js2"></div>
+            </div>
+        </div>
+    </figure>
+
+    <!-- Footer / Contact Form-->
+    <div class="container-fluid footer justify-content-center">
+        <h3 data-aos='zoom-in' id='contactCTA'>Contact Me!</h3>
+        <hr data-aos='zoom-in' class="light">
+        <p data-aos='zoom-in' class="lead" id='questionCTA'>If you have any questions feel free to ask!</p>
+        <div class="row" id='test'>
+            <form id="CONTACT" data-aos='zoom-in' action="contactform.php" method="POST" data-netlify="true">
+                <div id="status-element"></div>
+                <div class="form-group">
+                    <div class="col-sm">
+                        <input id="email" type="email" name='email' placeholder=" Your Email">
+                    </div>
+                    <div class="col-sm">
+                        <input id="name" type="text" name="name" placeholder=' Your Name'>
+                    </div>
+                    <div class="col-sm">
+                        <textarea placeholder=' Your Message' name="message" id="message" cols="30" rows="10"></textarea>  
+                    </div> 
+                    <input type="submit" name="submit" value="SUBMIT" class='btn btn-outline-light btn-lg' id='submit'/> 
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="socials">
+        <div class="footer-row social-icons justify-content-center">
+            <i class="fab fa-discord media"></i>
+            <i class="fab fa-twitch media"></i>
+            <i class="fab fa-twitter-square media"></i>
+        </div>
+        <div class="footer-row social-icons justify-content-center">
+            <p>JARROD GOODNEY <span id='copy'>&copy; 2020</span></p>
+        </div>  
+    </div>
+
+    <script src="https://kit.fontawesome.com/0753b6a2f5.js" crossorigin="anonymous"></script>
+    <script src="particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="app.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({disable: 'phone', delay: 0, once: false}); //UNCOMMENT WHEN DEPLOY, FIREFOX SUCKS BUT SO DOES CHROME
+  </script>
+</body>
+</html>
